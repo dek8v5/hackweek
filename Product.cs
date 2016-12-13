@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
 
-namespace BookLibrary
+namespace BookLibrary_Client.Models
 {
     public class Product
     {
+        [Display(Name ="bookID")]
         //get ad set the Id
         public int bookID
         {
@@ -14,6 +16,7 @@ namespace BookLibrary
             set;
         }
 
+        [Display(Name = "title")]
         //get ad set the title
         public string title
         {
@@ -21,6 +24,7 @@ namespace BookLibrary
             set;
         }
 
+        [Display(Name = "author")]
         //get ad set the author
         public string author
         {
@@ -28,6 +32,7 @@ namespace BookLibrary
             set;
         }
 
+        [Display(Name = "price")]
         //get ad set the price
         public decimal price
         {
@@ -35,6 +40,8 @@ namespace BookLibrary
             set;
         }
 
+
+        [Display(Name = "quantity")]
         //get ad set the quantity
         public int quantity
         {
@@ -43,10 +50,10 @@ namespace BookLibrary
         }
 
         //get ad set the creationDate
-        //public DateTime creationDate
-        //{
+       // public DateTime creationDate
+       // {
          //   get;
-          //  set;
-        //}
+        //    set;
+       // }
     }
 }
